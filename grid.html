@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Columns</title>
+<style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        padding: 0%;
+        margin: 0%;
+    }
+    .container {
+        display: grid;
+        width: 100%;
+        height: 600px;
+        grid-template-areas: 'one one one one one one one one one'
+                            'two three three three three three four four four'
+                            'two three three three three three four four four'
+                            'two five five five five five five five five';
+    }
+    #one{
+        grid-area: one;
+        background-color: red;
+        color: white;
+    }
+    #two{
+    grid-area: two;
+    background-color: blue;
+    color: white;
+    }
+    #three{
+    grid-area: three;
+    background-color: purple;
+    color: white;
+    }
+    #four{
+    grid-area: four;
+    background-color: rgb(43, 109, 87);
+    color: white;
+    }
+    #five{
+      grid-area: five;
+      background-color: yellowgreen;
+      color: white;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="one">[1]</div>
+        <div id="two">[2]</div>
+        <div id="three">[3]</div>
+        <div id="four">[4]</div>
+        <div id="five">[5]</div>
+    </div>
+
+    <div class="credits">
+        <h3>Work done by: </h3>
+        <h4>Michael Keith • Nathan Issac • Edward Alexander • Andrew Osama </h4>
+    </div>
+    
+
+</body>
+</html>
